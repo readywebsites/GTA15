@@ -32,7 +32,7 @@ ROOT_URLCONF = 'gta_backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'main' / 'templates'],  # ✅ HTML template location
+        'DIRS': [BASE_DIR / 'main' / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -73,10 +73,13 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
-# ✅ Static files setup
+# ✅ Static files setup for development and production
 STATIC_URL = '/static/'
+
 STATICFILES_DIRS = [
-    BASE_DIR / 'main' / 'static',  # ✅ Serve assets from here
+    BASE_DIR / 'main' / 'static',  # development static folder
 ]
+
+STATIC_ROOT = BASE_DIR / 'static'  # used in production for collectstatic
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
