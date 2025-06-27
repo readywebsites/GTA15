@@ -7,7 +7,7 @@ SECRET_KEY = 'django-insecure-6%-0zy@^%mwvestn!+4s^e46%jcuqney=r_0_#dvpvo2g7%s7h
 
 DEBUG =True
 
-ALLOWED_HOSTS = ['gta_6.biz499.com', 'www.gta_6.biz499.com']
+ALLOWED_HOSTS = ['gta-6.biz499.com', 'www.gta-6.biz499.com']
 
 # Application definition
 INSTALLED_APPS = [
@@ -30,7 +30,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'gta_backend.urls'
+ROOT_URLCONF = 'gta_project.urls'
 
 TEMPLATES = [
     {
@@ -48,7 +48,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'gta_backend.wsgi.application'
+WSGI_APPLICATION = 'gta_project.wsgi.application'
 
 # Database
 DATABASES = {
