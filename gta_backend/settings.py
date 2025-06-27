@@ -38,7 +38,7 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                'django.template.context_processors.debug',  # ✅ required for DEBUG info
+                'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
@@ -83,6 +83,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'main' / 'static',
 ]
 
-STATIC_ROOT = BASE_DIR / 'static'
+# ✅ Fixed: use a clean folder for production collected files
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
