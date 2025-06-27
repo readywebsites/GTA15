@@ -5,9 +5,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-6%-0zy@^%mwvestn!+4s^e46%jcuqney=r_0_#dvpvo2g7%s7h'
 
-DEBUG = False  # ❗️Use True only for local development
+DEBUG =True
 
-ALLOWED_HOSTS = ['gta6.biz499.com', 'www.gta6.biz499.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['gta_6.biz499.com', 'www.gta_6.biz499.com']
 
 # Application definition
 INSTALLED_APPS = [
